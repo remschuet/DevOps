@@ -1,4 +1,38 @@
-__pycache__/
-*.pyc
+# Environnements virtuels
 venv/
 .env
+.env.*
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Caches de tests
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Rapport SonarCloud (optionnel si temporaire)
+.sonar/
+
+# Fichiers de logs
+*.log
+
+# Mac OS / Windows
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'IDE
+.vscode/
+.idea/
+*.swp
+
+# Dépendances en cache
+pip-wheel-metadata/
+*.egg-info/
+
+# Fichiers de build
+build/
+dist/
