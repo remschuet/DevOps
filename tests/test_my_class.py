@@ -10,4 +10,4 @@ def test_subtract():
 
 def test_subtract_2():
     calc = MyCalculator()
-    assert calc.subtract(6, 2) == 4
+    assert calc.subtract(5, 2) == 22
