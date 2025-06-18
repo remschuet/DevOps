@@ -8,6 +8,15 @@ on:
 
 jobs:
   build:
+  - name: Debug coverage.xml
+    run: |
+      echo "✅ Listing current folder content"
+      ls -l
+      echo "✅ Searching for coverage.xml recursively"
+      find . -name "coverage.xml"
+      echo "✅ Display coverage.xml"
+      cat coverage.xml || echo "❌ coverage.xml not found"
+
     name: SonarCloud Scan
     runs-on: ubuntu-latest
 
