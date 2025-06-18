@@ -7,3 +7,7 @@ def test_add():
 def test_subtract():
     calc = MyCalculator()
     assert calc.subtract(5, 2) == 3
+
+def test_subtract_2():
+    calc = MyCalculator()
+    assert calc.subtract(6, 2) == 4
