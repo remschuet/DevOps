@@ -3,6 +3,8 @@
 Ce dépôt contient un projet Python basé sur **FastAPI**, avec :
 - une architecture simple (`app/`, `tests/`)
 - des tests unitaires avec `pytest`
+- des tests FastAPI avec `pytest`
+- des tests MOC avec `pytest`
 - une couverture de code analysée par **SonarCloud**
 - une CI automatisée via **GitHub Actions**
 
