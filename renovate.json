@@ -1,5 +1,20 @@
 {
   "extends": ["config:base"],
   "timezone": "America/Toronto",
-	"schedule": ["after 6am"]
+  "schedule": ["every day after 12am and before 6am"],
+  "dependencyDashboard": true,
+  "automerge": false,
+  "baseBranches": ["indev"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^eslint", "^prettier"],
+      "groupName": "Dev tooling updates",
+      "labels": ["dev"]
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "enabled": false
+    }
+  ]
 }
