@@ -1,11 +1,10 @@
 {
   "extends": ["config:base"],
   "timezone": "America/Toronto",
-  "description": "Schedule daily before 4 AM",
   "schedule": ["* 0-3 * * *"],
   "dependencyDashboard": true,
   "automerge": false,
-  "baseBranches": ["indev"],
+  "baseBranches": ["master"],
   "labels": ["dependencies"],
   "packageRules": [
     {
