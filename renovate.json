@@ -1,8 +1,8 @@
 {
   "extends": ["config:base"],
   "timezone": "America/Toronto",
-  "schedule": ["every day at 2:00 am"],
-
+  "description": "Schedule daily before 4 AM",
+  "schedule": ["* 0-3 * * *"],
   "dependencyDashboard": true,
   "automerge": false,
   "baseBranches": ["indev"],
