@@ -4,7 +4,7 @@
   "schedule": ["* 0-3 * * *"],
   "dependencyDashboard": true,
   "automerge": false,
-  "baseBranches": ["main"],
+  "baseBranches": ["indev"],
   "labels": ["dependencies"],
   "packageRules": [
     {
@@ -15,6 +15,26 @@
     {
       "matchManagers": ["dockerfile"],
       "enabled": false
+    },
+    {
+      "matchPackagePatterns": ["^pytest", "^pytest-asyncio", "^debugpy"],
+      "groupName": "Python test tools",
+      "labels": ["test"]
+    },
+    {
+      "matchPackagePatterns": ["^uvicorn", "^fastapi", "^starlette"],
+      "groupName": "FastAPI runtime stack",
+      "labels": ["fastapi"]
+    },
+    {
+      "matchPackagePatterns": ["^sqlalchemy", "^sqlmodel", "^asyncpg", "^alembic"],
+      "groupName": "Database & ORM",
+      "labels": ["db"]
+    },
+    {
+      "matchPackagePatterns": ["^pydantic", "^pydantic-core", "^pydantic-settings"],
+      "groupName": "Pydantic core",
+      "labels": ["validation"]
     }
   ]
 }
