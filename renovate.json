@@ -4,7 +4,7 @@
   "schedule": ["* 0-3 * * *"],
   "dependencyDashboard": true,
   "automerge": false,
-  "baseBranches": ["indev"],
+  "baseBranches": ["main"],
   "labels": ["dependencies"],
   "packageRules": [
     {
