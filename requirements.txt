@@ -4,4 +4,3 @@ pytest
 coverage
 pytest-cov
 httpx
-pylint
